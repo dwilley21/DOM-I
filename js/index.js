@@ -53,6 +53,9 @@ let middleImg = document.getElementById("middle-img");
 let counter = 1;
 navAnchors.forEach(function(element) {
   element.textContent = siteContent['nav'][`nav-item-${counter}`]
+  
+  element.style.color = "green";
+  
   counter++;
 });
 
@@ -71,3 +74,17 @@ middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
 h4[5].textContent = siteContent["contact"]["contact-h4"]; p[5].textContent = siteContent["contact"]["address"]; p[6].textContent = siteContent["contact"]["phone"]; p[7].textContent = siteContent["contact"]["email"];
  p[8].textContent = siteContent["footer"]["copyright"];
+
+ 
+const woahIamNew = document.createElement("a");
+const Metooo = document.createElement("a");
+
+woahIamNew.textContent = "I am alive";
+Metooo.textContent = "Life is good";
+
+woahIamNew.style.color = "blue";
+Metooo.style.color = "red";
+
+
+Nav.appendChild(woahIamNew);
+Nav.appendChild(Metooo);
